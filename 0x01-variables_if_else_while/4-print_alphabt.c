@@ -12,11 +12,10 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		if (i != 'q' && i != 'e')
+		if (alp[i] != 'q' && alp[i] != 'e')
 		{
-			continue;
+			putchar(alp[i]);
 		}
-		putchar(alp[i]);
 	}
 
 	putchar('\n');
