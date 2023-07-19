@@ -1,18 +1,24 @@
 #include "main.h"
-
 /**
- * print_alphabet - use the function _putchar to print alphabets
- *
- * Return: Always 0 (Success)
- */
+* main - Entry point
+*Description: print_alphabet_x10 - Prints the alphabet from a to z, x10 times.
+* Return: Always à (success)
+*/
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
+/*print_alphabet_x10 - Prints the alphabet from a to z, x10 times.*/
+
 {
-	int n;
+		int i, j;
 
-	for (n = 97 ; n <= 122 ; n++)
-	{
-		_putchar(n);
+for (i = 1 ; i <= 10 ; i++)
+{
+		for (j = 97 ; j <= 122 ; j++)
+
+_putchar(j);
+
+		 _putchar('\n');
 	}
-	_putchar('\n');
+
 }
+
