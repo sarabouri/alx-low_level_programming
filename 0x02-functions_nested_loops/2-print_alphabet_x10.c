@@ -1,22 +1,18 @@
 #include "main.h"
+
 /**
- * main - Entry point
- * print_alphabet_x10 - Prints the lowercase alphabet from a to z, x10 times.
- * Return: Always à (success)
+ * print_alphabet - use the function _putchar to print alphabets
+ *
+ * Return: Always 0 (Success)
  */
 
-void print_alphabet_x10(void)
-
+void print_alphabet(void)
 {
-	int i, j;
+	int n;
 
-	for (i = 1 ; i <= 10 ; i++)
+	for (n = 97 ; n <= 122 ; n++)
 	{
-		for (j = 97 ; j <= 122 ; j++)
-
-			_putchar(j);
-
-		_putchar('\n');
+		_putchar(n);
 	}
-
+	_putchar('\n');
 }
