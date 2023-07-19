@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - Entry point
- * Description: print_alphabet_x10 from a to z
+ * print_alphabet_x10 - Prints the lowercase alphabet from a to z, x10 times.
  * Return: Always à (success)
  */
 
