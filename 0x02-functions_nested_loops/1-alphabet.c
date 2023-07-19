@@ -1,20 +1,18 @@
 #include "main.h"
 
-void _putchar(char c) {
-    putchar(c);
-}
+/**
+ * print_alphabet - use the function _putchar to print alphabets
+ *
+ * Return: Always 0 (Success)
+ */
 
-void print_alphabet(void) {
-    char letter;
+void print_alphabet(void)
+{
+	int n;
 
-    for (letter = 'a'; letter <= 'z'; letter++) {
-        _putchar(letter);
-    }
-
-    _putchar('\n');
-}
-
-int main() {
-    print_alphabet();
-    return 0;
+	for (n = 97 ; n <= 122 ; n++)
+	{
+		_putchar(n);
+	}
+	_putchar('\n');
 }
