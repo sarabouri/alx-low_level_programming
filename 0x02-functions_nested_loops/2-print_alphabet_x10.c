@@ -1,8 +1,6 @@
 #include "main.h"
 /**
-* main - Entry point
 *Description: print_alphabet_x10 - Prints the alphabet from a to z, x10 times.
-* Return: Always à (success)
 */
 
 void print_alphabet_x10(void)
