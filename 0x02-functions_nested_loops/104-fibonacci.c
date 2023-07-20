@@ -1,31 +1,50 @@
 #include <stdio.h>
 
 /**
- * main - finds and prints the sum of the even-valued terms,
- * followed by a new line.
+ *  main - Prints the first 98 Fibonacci numbers
  *
- * description: adding the previous two terms.
- *
- * Return: Always 0 (Success).
+ *  Return: Always 0 (Success).
  */
-
 int main(void)
 {
-	long int a, b, fn, afn;
+	int i, boolean, boolean2;
+	long int n1, n2, fn, fn2, n11, n22;
 
-	a = 1;
-	b = 2;
-	fn = afn = 0;
-	while (fn <= 4000000)
+	n1 = 1;
+	n2 = 2;
+	boolean =  boolean2 = 1;
+	printf("%ld, %ld", n1, n2);
+	for (i = 0; i < 96; i++)
 	{
-		fn = a + b;
-		a = b;
-		b = fn;
-		if ((a % 2) == 0)
+		if (boolean)
 		{
-			afn += a;
+			fn = n1 + n2;
+			printf(", %ld", fn);
+			n1 = n2;
+			n2 = fn;
 		}
+		else
+		{
+			if (boolean2)
+			{
+				n11 = n1 % 1000000000;
+				n22 = n2 % 1000000000;
+				n1 = n1 / 1000000000;
+				n2 = n2 / 1000000000;
+				boolean2 = 0;
+			}
+			fn2 = (n11 + n22);
+			fn = n1 + n2 + (fn2 / 1000000000);
+			printf(", %ld", fn);
+			printf("%ld", fn2 % 1000000000);
+			n1 = n2;
+			n11 = n22;
+			n2 = fn;
+			n22 = (fn2 % 1000000000);
+		}
+		if (((n1 + n2) < 0) && boolean == 1)
+			boolean = 0;
 	}
-	printf("%ld\n", afn);
+	printf("\n");
 	return (0);
 }
