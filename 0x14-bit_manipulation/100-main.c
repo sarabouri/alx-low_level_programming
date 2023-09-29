@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 #include "main.h"
 
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 	{
 		printf("Little Endian\n");
 
-	else
+	}	else
 	{
 		printf("Big Endian\n");
 	}
